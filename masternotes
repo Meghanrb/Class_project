@@ -1,1 +1,2 @@
 So far, we have run our files through FASTQC & quality controlled them with TRIMMOMATIC (see SBATCH script for details). 
+We have also aligned our sequences using Bowtie2.
