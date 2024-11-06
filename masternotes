@@ -1,0 +1,1 @@
+So far, we have run our files through FASTQC & quality controlled them with TRIMMOMATIC (see SBATCH script for details). 
