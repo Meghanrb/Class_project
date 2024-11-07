@@ -1,2 +1,15 @@
 So far, we have run our files through FASTQC & quality controlled them with TRIMMOMATIC (see SBATCH script for details). 
+My reads are WTA1_1 & WTA1_2.
+
+WTA1_1.fq.gz # of reads before trimming	21,098,941. per-base sequence content before (B) and after (G) trimming. Sequence duplication before 
+cleaning (B) and after (G) trimming. Minor adaption contamination went away after cleaning.
+
+WTA1_2.fq.gz# of reads before trimming	21,098,941. per-base sequence content before (B) and after (G) trimming. Sequence duplication before 
+cleaning (B) and after (G) trimming. Minor adaption contamination went away after cleaning.
+
+Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To create index go to interactive node and then: bowtie2-build GCF_000182965.3.fna calb_indx
+
+# of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2: 20,171,629. % aligned concordantly 1 time:
+% aligned >1 time: Overall alignment rate: 
+
 We have also aligned our sequences using Bowtie2.
