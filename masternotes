@@ -9,7 +9,8 @@ cleaning (B) and after (G) trimming. Minor adaption contamination went away afte
 
 Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To create index go to interactive node and then: bowtie2-build GCF_000182965.3.fna calb_indx
 
+
+We have  aligned our sequences using Bowtie2.
+
 # of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2: 20,171,629. % aligned concordantly 1 time:
 % aligned >1 time: Overall alignment rate: 
-
-We have also aligned our sequences using Bowtie2.
