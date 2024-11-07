@@ -5,15 +5,8 @@
 #SBATCH --mem=4G
 
 #Load the Bowtie Module
-module load gcc
 module load bowtie2
-
-# Change to temp working directory with example files
-cd /home/mrb339/class/project/output
-
-# Indexing a reference genome
-bowtie2-build ./home/mrb339/class/project/GCF_000182965.3_ASM18296v3_genomic.fna WTA1
 
 
 # Paired-end example
-bowtie2 -p $SLURM_CPUS_PER_TASK -x WTA1 -1 ./home/mrb339/class/project/output/WTA1_1.trPE.fq -2 ./home/mrb339/class/project/output/WTA1_2.trPE.fq -S WTA1.sam
+bowtie2 -x calb_idx -1 /home/mrb339/class/project/output/WTA1_1.trPE.fq -2 /home/mrb339/class/project/output/WTA1_2.trPE.fq -S WTA1.sam 
