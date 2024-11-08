@@ -12,5 +12,10 @@ Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To crea
 
 We have  aligned our sequences using Bowtie2.
 
-# of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2: 20,171,629. % aligned concordantly 1 time:
-% aligned >1 time: Overall alignment rate: 
+# of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2 (found in z01 file): 20,171,629. % aligned concordantly 1 time: 88.31%
+% aligned >1 time: 6.87% Overall alignment rate: 98.07%
+
+Next, we prepared for HTSeq by sorting & indexing our .bam files (samtools sort WTA1.bam -o WTA1.srt.bam to sort and samtools index WTA1.srt.bam to 
+index).
+
+
