@@ -1,0 +1,31 @@
+# Purpose: use RNAseq to determine the effect thiamine on Candida albicans. 
+
+Candida albicans are a commensal yeast that can cause a variety of pathologies. 
+WTA1_1.fq.gz, WTA1_2.fq.gz (first analysis done on these files) 
+WTB1_1.fq.gz, WTB1_2.fq.gz WTC1_1.fq.gz, WTC1_2.fq.gz WTA2_1.fq.gz, WTA2_2.fq.gz WTB2_1.fq.gz, WTB2_2.fq.gz WTC2_1.fq.gz, WTC2_2.fq.gz
+
+A/B/C = biological replicates (isolates) A1/B1/C1 = Thi+; A2/B2/C2=Thi- _1 & _2 are read pairs
+
+The refseq genomes are:
+GCF_000182965.3_ASM18296v3_genomic.fna.gz
+GCF_000182965.3_ASM18296v3_genomic.gtf.gz
+
+To begin with, we ran our files through FASTQC & quality controlled them with TRIMMOMATIC (See SBATCH script here). 
+My reads are WTA1_1 & WTA1_2.
+
+WTA1_1.fq.gz # of reads before trimming	21,098,941. per-base sequence content before (B) and after (G) trimming. Sequence duplication before 
+cleaning (B) and after (G) trimming. Minor adaption contamination went away after cleaning.
+
+WTA1_2.fq.gz# of reads before trimming	21,098,941. per-base sequence content before (B) and after (G) trimming. Sequence duplication before 
+cleaning (B) and after (G) trimming. Minor adaption contamination went away after cleaning.
+
+Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To create index go to interactive node and then: bowtie2-build GCF_000182965.3.fna calb_indx
+
+
+We have  aligned our sequences using Bowtie2.
+
+# of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2 (found in z01 file): 20,171,629. % aligned concordantly 1 time: 88.31%
+% aligned >1 time: 6.87% Overall alignment rate: 98.07%
+
+Next, we prepared for HTSeq by sorting & indexing our .bam files (samtools sort WTA1.bam -o WTA1.srt.bam to sort and samtools index WTA1.srt.bam to 
+index).
