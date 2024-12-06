@@ -39,7 +39,7 @@ Details on alignments can be found ![here.](https://docs.google.com/spreadsheets
 This step is to count reads per gene model
 
 Next, we prepared for HTSeq by sorting & indexing our .bam files (samtools sort WTA1.bam -o WTA1.srt.bam to sort and samtools index WTA1.srt.bam to 
-index). We then created a Conda environment to run HTSeq. The SBATCH script for HTSeq can be found ![here.] (https://github.com/Meghanrb/Class_project/blob/main/HTSeq.SBATCH)
+index). We then created a Conda environment to run HTSeq. The SBATCH script for HTSeq can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/HTSeq.SBATCH)
 
 We then downloaded the output files to put into R with the DESeq2 program.
 
