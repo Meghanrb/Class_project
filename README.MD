@@ -27,7 +27,7 @@ Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To crea
 
 We have  aligned our sequences using Bowtie2. See this slurm script for details: https://github.com/Meghanrb/Class_project/blob/main/bowtie2.SBATCH
 
-# of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2 (found in z01 file): 20,171,629. % aligned concordantly 1 time: 88.31%
+Details on alignments can be found here: https://docs.google.com/spreadsheets/d/1fa-FXVMlCXOZkbHSx_mMg0OXLMy9BeBJg8uWrEMpKGo/edit?gid=0#gid=0 . The # of cleaned reads after trimmomatic: 20,171,629. # read pairs detected by bowtie2 (found in z01 file): 20,171,629. % aligned concordantly 1 time: 88.31%
 % aligned >1 time: 6.87% Overall alignment rate: 98.07%
 
 ### HTSeq
