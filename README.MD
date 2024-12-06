@@ -13,7 +13,10 @@ The refseq genomes are:
 GCF_000182965.3_ASM18296v3_genomic.fna.gz
 GCF_000182965.3_ASM18296v3_genomic.gtf.gz
 
-### FASTQC & TRIMMOMATIC
+### FASTQC & TRIMMOMATIC 
+
+This step is for quality control.
+
 To begin with, we ran our files through FASTQC & quality controlled them with TRIMMOMATIC (See SBATCH script here: https://github.com/Meghanrb/Class_project/blob/main/trimmomatic_WTA1.SBATCH). 
 
 My reads are WTA1_1 & WTA1_2.
@@ -21,8 +24,9 @@ My reads are WTA1_1 & WTA1_2.
 Number of bases per read & quality of reads before & after trimming can be found here: https://docs.google.com/spreadsheets/d/1AOa-XaTzR_PKMIRQDmu8oDTmawXXnkIwEjKOQkNC7Vs/edit?gid=0#gid=0 . For both reads, minor adaption contamination went away after cleaning.
 
 ### BOWTIE2
+This step is to align reads to a reference geneome (see below).
 
-Used C. albicans SC5314 genome assembly (GCF_000182965.3) for alignment. To create index go to interactive node (srun --pty bash) and then: bowtie2-build GCF_000182965.3.fna calb_indx
+Used C. albicans SC5314 genome assembly (GCF_000182965.3) for our reference genome for alignment. To create index go to interactive node (srun --pty bash) and then: bowtie2-build GCF_000182965.3.fna calb_indx
 
 
 We have  aligned our sequences using Bowtie2. See this slurm script for details: https://github.com/Meghanrb/Class_project/blob/main/bowtie2.SBATCH
@@ -32,5 +36,17 @@ Details on alignments can be found here: https://docs.google.com/spreadsheets/d/
 
 ### HTSeq
 
+This step is to count reads per gene model
+
 Next, we prepared for HTSeq by sorting & indexing our .bam files (samtools sort WTA1.bam -o WTA1.srt.bam to sort and samtools index WTA1.srt.bam to 
-index).
+index). We then created a Conda environment to run HTSeq. The SBATCH script for HTSeq can be found here: https://github.com/Meghanrb/Class_project/blob/main/HTSeq.SBATCH 
+
+We then downloaded the output files to put into R with the DESeq2 program.
+
+### DESeq2
+
+This step is to measure differentially expressed genes. The code for these outputs can be found here: https://github.com/Meghanrb/Class_project/blob/main/DESeq_script_R
+
+
+
+
