@@ -47,6 +47,7 @@ We then downloaded the output files to put into R with the DESeq2 program.
 
 This step is to measure differentially expressed genes. The code for these outputs can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/DESeq_script_R)
 
+![plot test](/Users/meghanbullard/Desktop/DESEq2_analysis/TH-vTH+_pcaplot.png)
 
 
 
