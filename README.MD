@@ -47,9 +47,9 @@ We then downloaded the output files to put into R with the DESeq2 program.
 
 This step is to measure differentially expressed genes. The code for these outputs can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/DESeq_script_R)
 
-Our ![PCA plot](https://github.com/Meghanrb/Class_project/blob/main/TH-vTH%2B_pcaplot.png) shows that two principle components describe 97% of the variance seen between the two treatments, with PC1 explaining 88% of the variance. 
+Our PCA plot ![PCA plot](https://github.com/Meghanrb/Class_project/blob/main/TH-vTH%2B_pcaplot.png) shows that two principle components describe 97% of the variance seen between the two treatments, with PC1 explaining 88% of the variance. 
 
-Our ![Volcano plot]{https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes.
+Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes.
 
 
 
