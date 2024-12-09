@@ -55,10 +55,15 @@ This step is to measure differentially expressed genes. The code for these outpu
 
 Our PCA plot ![PCA plot](https://github.com/Meghanrb/Class_project/blob/main/TH-vTH%2B_pcaplot.png) shows that two principle components describe 97% of the variance seen between the two treatments, with PC1 explaining 88% of the variance. 
 
-Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes. The gene names and notes on gene function can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/signif_TH-vTH%2B_%2Bnames%2Bbiofunct.csv)
+Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes. The gene names and notes on gene function can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/signif_TH-vTH%2B_%2Bnames%2Bbiofunct.csv) From this analysis, it can be seen that many genes are related to an induced spider biofilm.
 
 ### Gene Ontology (GO) Analysis
-GO analysis was done using ![Panther classification system](https://pantherdb.org/tools/compareToRefList.jsp) (GO Ontology database DOI: 10.5281/zenodo.12173881 Released 2024-06-17). Using the Panther overrepresentation test, up to 8 out of the 9 genes whose function is known were found to play a role in 
+GO analysis was done using ![Panther classification system](https://pantherdb.org/tools/compareToRefList.jsp) (GO Ontology database DOI: 10.5281/zenodo.12173881 Released 2024-06-17). Using the Panther overrepresentation test, up to 8 out of the 9 genes whose function is known were found to play a role in the thiamine biosynthetic process pathway. The full results for this test can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/analysis.png) 
+
+## Final Interpretation of results
+Using bulk RNA-seq data from thiamine deficient and thiamine present groups, we were able to determine that genes related to biofilm production and thiamine biosynthetic pathways were differentially expressed. 
+
+These results seem to suggest that in the absence of Thiamine, C. albicans upregulates pathways related to Thiamine production. Thiamine has been suggested to play an important role in biofilm synthesis (Ketelboeter et al., 2023) and so therefore genes in both of these mechanisms being altered suggests that it is possible that the ability of C. albicans to form biofilms may be altered in the absence of thiamine, although further work is needed to confirm this. Overall, these results suggest that C. albicans are attempting to overcome environmental deficiencies and are displaying a plasticity to the environmental conditions. 
 
 
-
+Ketelboeter LM, Mitra S, Gyaneshwar P, A thiamine transporter is required for biofilm formation by Rhizobium sp. IRBG74, FEMS Microbiology Letters, Volume 370, 2023, fnad046, https://doi.org/10.1093/femsle/fnad046
