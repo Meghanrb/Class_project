@@ -55,11 +55,10 @@ This step is to measure differentially expressed genes. The code for these outpu
 
 Our PCA plot ![PCA plot](https://github.com/Meghanrb/Class_project/blob/main/TH-vTH%2B_pcaplot.png) shows that two principle components describe 97% of the variance seen between the two treatments, with PC1 explaining 88% of the variance. 
 
-Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes.
+Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes. The gene names and notes on gene function can be found ![here.](https://github.com/Meghanrb/Class_project/blob/main/signif_TH-vTH%2B_%2Bnames%2Bbiofunct.csv)
 
 ### Gene Ontology (GO) Analysis
-GO analysis was done using ![Panther classification system](https://pantherdb.org/tools/compareToRefList.jsp) (GO Ontology database DOI: 10.5281/zenodo.12173881 Released 2024-06-17). 
-
+GO analysis was done using ![Panther classification system](https://pantherdb.org/tools/compareToRefList.jsp) (GO Ontology database DOI: 10.5281/zenodo.12173881 Released 2024-06-17). Using the Panther overrepresentation test, up to 8 out of the 9 genes whose function is known were found to play a role in 
 
 
 
