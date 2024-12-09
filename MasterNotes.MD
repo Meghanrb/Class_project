@@ -57,6 +57,8 @@ Our PCA plot ![PCA plot](https://github.com/Meghanrb/Class_project/blob/main/TH-
 
 Our Volcano plot ![Volcano plot](https://github.com/Meghanrb/Class_project/blob/main/volcano_TH-vTH%2B.png) shows that there are 13 genes expressed significantly differently in thiamine absent vs. thiamine present conditions. The rest of the analysis will focus on exploring these 13 genes.
 
+### Gene Ontology (GO) Analysis
+GO analysis was done using ![Panther classification system](https://pantherdb.org/tools/compareToRefList.jsp) (GO Ontology database DOI: 10.5281/zenodo.12173881 Released 2024-06-17). 
 
 
 
